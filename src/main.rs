@@ -26,8 +26,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {
-    // args
-    // TODO: check arg number and act accordingly
+    // todo reimplement arg stuff
     let args: Vec<String> = env::args().collect();
 
     match args.len() {
