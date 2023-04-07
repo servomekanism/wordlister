@@ -1,4 +1,3 @@
-//    Copyright (C) 2023 @servo
 //    https://github.com/servomekanism/wordlister
 //
 //    wordlister - create a combined "name surname" list that can be
