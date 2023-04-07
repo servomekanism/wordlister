@@ -1,6 +1,6 @@
 # wordlister
 
-Name and surname wordlist generator.
+Name and surname wordlist generator. Created to practice rust.
 
 Once the name and surname combined list is created, you can use [namemash](https://gist.github.com/superkojiman/11076951) to create a list of possible usernames. 
 
