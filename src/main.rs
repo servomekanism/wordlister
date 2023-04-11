@@ -43,9 +43,9 @@ fn main() -> std::io::Result<()> {
     let mut writer = BufWriter::new(output_file);
 
     for line1 in names_reader.lines() {
-        let line1 = line1?;
+        let line1 = line1?; // makes line1 immutable again
         for line2 in surnames_reader.by_ref().lines() {
-            let line2 = line2?;
+            let line2 = line2?; // makes line2 immutable again
             writer.write_all(format!("{} {}\n", line1, line2).as_bytes())?;
         }
         surnames_reader.seek(std::io::SeekFrom::Start(0))?;
