@@ -24,6 +24,7 @@ use std::fs::File;
 use std::io::Read;
 use std::io::Seek;
 use std::io::{BufRead, BufReader, BufWriter, Write};
+use std::process;
 
 fn main() -> std::io::Result<()> {
     // todo: add arg checks information
@@ -31,7 +32,7 @@ fn main() -> std::io::Result<()> {
 
     if args.len() != 4 {
         println!("Usage: {} <names.txt> <surnames.txt> <output.txt>", args[0]);
-        return Ok(());
+        process::exit(1);
     }
 
     let names = File::open(&args[1])?;
